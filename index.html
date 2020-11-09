@@ -11,20 +11,20 @@
 <body>
     <div id="app">
         <div class="slider">
-            <div class="prev">
+            <div class="prev" @click='prevPhoto'>
                 <i class="fas fa-arrow-left"></i>
             </div>
 
             <div class="images">
-                <img src="./images/image1.jpg" alt="">
+                <img :src="photos[indexPhoto]" alt="">
             </div>
 
-            <div class="next">
+            <div class="next" @click='nextPhoto'>
                 <i class="fas fa-arrow-right"></i>
             </div>
 
             <div class="nav">
-                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle active"></i>
                 <i class="fas fa-circle"></i>
                 <i class="fas fa-circle"></i>
                 <i class="fas fa-circle"></i>
