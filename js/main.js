@@ -25,6 +25,9 @@ const app = new Vue ({
             if (this.indexPhoto < 0){
                 this.indexPhoto = (this.photos.length - 1);
              }
+        },
+        setPhoto(index){
+            this.indexPhoto = index;
         }
     }
 });
